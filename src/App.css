@@ -8,6 +8,7 @@
 html {
   scroll-behavior: smooth;
   background-color: #0f0701 !important;
+  scrollbar-width: thin;
 }
 
 body {
@@ -78,15 +79,11 @@ input:focus, textarea:focus, select:focus {
   background: #555; 
 }
 
-/* For Firefox */
 * {
   scrollbar-color: #888 #f1f1f1; 
   scrollbar-width: thin; 
 }
 
-*::-webkit-scrollbar {
-  display: none;
-}
 
 /*-----------------------Navbar style-------------------------*/
 
@@ -104,7 +101,8 @@ nav.navbar {
 /*changes the navbar colour once the user scrolls down the page*/
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #684f3b;
+  background-color: #071522;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /*logo/design*/
@@ -120,14 +118,17 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   padding: 0.25px;
   font-size: 18px;
   opacity: 0.75;
-  margin-right: 10px;
+  margin-right: 20px;
+  transition: 0.2s ease-in-out;
 }
 
 .me-auto{
   align-content:end
 }
 
- nav.navbar .navbar-nav a.nav-link.navbar-link:hover, 
+ nav.navbar .navbar-nav a.nav-link.navbar-link:hover{
+  transform: scale(1.1);
+ }  
  nav.navbar .navbar-nav a.nav-link.navbar-link.active{
   opacity: 1;
  }
@@ -139,21 +140,20 @@ span.navbar-text {
 }
 
 .social-icons{
-  display: inline-block;
+  display: flex;
   margin-left: 14px;
+  align-items: center;
 }
 
 .social-icons a {
   width: 42px;
   height: 42px;
-  background: #1a2b39;
   display: inline-flex;
   border-radius: 50%;
   margin-right: 6px;
   align-items: center;
   justify-content: center;
   line-height: 1;
-  border: 2px solid rgb(0, 0, 0);
 }
 
 .social-icons a::before {
@@ -165,7 +165,6 @@ span.navbar-text {
   border-radius: 50%;
   transform: scale(0);
   transition: 0.4s ease-in-out;
-  border: 2px solid rgb(255, 255, 255);
 }
 
 
@@ -174,9 +173,10 @@ span.navbar-text {
 }
 
 .social-icons a img {
-  width: 100%;
+  width: 110%;
   z-index: 1;
   transition: 0.3s ease-in-out;
+
 }
 
 #github-logo img{
@@ -228,8 +228,19 @@ span.navbar-text {
 	position: absolute;
 }
 
+.navbar-toggler-icon{
+  filter: invert(95%);
+  background-image: url(./assets/images/github-mark-white.png);
+  background-size: cover;
+  height: 20% !important;
+  width: 20% !important;
+}
 
-
+@media (min-width: 768px) {
+  .navbar-toggler-icon {
+    display: none !important;
+  }
+}
 
 /*-----------------------Navbar style-------------------------*/
 /*--*/
@@ -327,6 +338,18 @@ span.navbar-text {
   transform: translateY(-175px);
 }
 
+@media (max-width: 768px) {
+  .parallax-text {
+    font-size: 5.2em;
+  }
+}
+
+@media (max-width: 576px) {
+  .parallax-text {
+    font-size: 3.2em;
+  }
+}
+
 .background-parallax{
   position: absolute;
   inset: 0;
@@ -345,6 +368,8 @@ span.navbar-text {
   background-position: bottom;
   background-size: cover;
 }
+
+
 
 /**/
 /* .parallax-layer{
