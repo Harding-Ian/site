@@ -1,6 +1,6 @@
 import {Navbar, Container, Nav} from "react-bootstrap";
 import { useState, useEffect} from "react";
-import githubLogo from '../assets/images/github-mark-white.png';
+import githubLogo from '../assets/images/github-mark-white2.png';
 // import linekdInLogo from '../assets/images/linkedIn-white.png';
 
 export const NavBar = () => {
@@ -36,7 +36,7 @@ export const NavBar = () => {
         <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
           <Container>
             <Navbar.Toggle aria-controls="basic-navbar-nav">
-                <span className="navbar-toggle-icon"></span>
+                <span className="navbar-toggler-icon"></span>
             </Navbar.Toggle>
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">

@@ -1,8 +1,8 @@
 import './App.css';
-// import { NavBar } from './components/NavBar';
+import { NavBar } from './components/NavBar';
 // import 'bootstrap/dist/css/bootstrap.min.css';
-// import Parallax from './components/Parallax';
-//import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+import Parallax from './components/Parallax';
+// import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 
 function App() {
 
@@ -16,8 +16,8 @@ function App() {
   return (
     <>
       <div className='App'>
-        {/* <NavBar />
-        <Parallax /> */}
+        <NavBar />
+        <Parallax />
         {/* <div className="lines">
           <div className="line"></div>
           <div className="line"></div>
