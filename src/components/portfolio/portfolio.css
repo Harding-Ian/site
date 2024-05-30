@@ -1,19 +1,33 @@
 
 .portfolio{
+   position: relative;
+   background-color: 041C2C; 
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+
+.progress{
     position: sticky;
     top: 0;
     left: 0;
-    padding-top: 75px;
     text-align: center;
     color: rgb(255, 230, 2);
     font-size: 30px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    padding-top: 85px;
+    background-color: #041C2C;
 }
+
 
 .progressBar{
     height: 10px;
+    width: 100%;
     background-color: white;
-}
-
-h1{
-
+    z-index: 50;
+    align-self: center;
 }
