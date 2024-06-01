@@ -18,16 +18,79 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    padding-bottom: 30px;
     padding-top: 85px;
     background-color: #041C2C;
+    z-index: 100;
 }
 
 
 .progressBar{
     height: 10px;
-    width: 100%;
+    width: 98%;
     background-color: white;
     z-index: 50;
     align-self: center;
+}
+
+.item-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.item-wrapper{
+    max-width: 1366px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container{
+    height: 50%;
+    flex: 1;
+
+}
+
+.item-container img{
+    height: 40vh;
+    transition: 0.5s;
+}
+
+
+
+
+.text-container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-container h2{
+    font-size: 4vw;
+}
+
+.text-container p{
+    color: gray;
+    font-size: 20px;
+}
+
+.text-container button{
+    background-color: rgb(197, 177, 0);
+    border: none;
+    border-radius: 10px;
+    margin-top: 5%;
+}
+
+.horizontal-line{
+    width: 100%;
+    height: 4px;
+    border: 0 none;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(175, 175, 175);
 }

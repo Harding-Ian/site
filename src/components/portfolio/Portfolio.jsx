@@ -2,7 +2,7 @@ import { useScroll, useSpring, motion, useTransform } from "framer-motion";
 import { useRef } from 'react';
 import "./portfolio.css";
 import p1 from "../../assets/images/mountains.jpg";
-import p2 from "../../assets/images/menu.svg";
+import p2 from "../../assets/images/mountains.jpg";
 import p3 from "../../assets/images/NightBackground.jpg";
 
 const items = [
@@ -26,7 +26,7 @@ const items = [
     },
 ];
 
-const Single = ({ item }) => {
+const Single = ({ item, isLast }) => {
 
     const ref = useRef();
     
@@ -34,19 +34,24 @@ const Single = ({ item }) => {
         target: ref,
     });
 
-    const y = useTransform(scrollYProgress, [0,1], [-300,300]);
+    const y = useTransform(scrollYProgress, [0,1], [-100, 100]);
 
     return (
-        <section ref={ref}>
-            <div className="container">
-                {/* <img src={item.img} alt="" />
-                <motion.div className="text-container" style={{y}}>
-                    <h2>{item.title}</h2>
-                    <p>{item.desc}</p>
-                    <button>Read More</button>
-                </motion.div> */}
-                <h2 style={{marginTop: "70vh"}}>{item.title}</h2>
+        <section>
+            <div className="item-container">
+                <div className="item-wrapper">
+                    <div image-container ref={ref}>
+                        <img src={item.img} alt="" />
+                    </div>
+                    <motion.div className="text-container" style={{y}}>
+                        <h2>{item.title}</h2>
+                        <p>{item.desc}</p>
+                        <button>See More</button>
+                        <a href="https://twitter.com/Dave_Conner" class="btn btn-4"><span>Hover</span></a> 
+                    </motion.div>
+                </div>
             </div>
+            {!isLast && <div className="horizontal-line"></div>}
         </section>
     );
 };
@@ -69,8 +74,8 @@ const Portfolio = () => {
                 <h1>Projects</h1>
                 <motion.div style={{ scaleX }} className="progressBar"></motion.div>
             </div>
-            {items.map(item => (
-                <Single item={item} key={item.id} />
+            {items.map((item, index) => (
+                <Single item={item} key={item.id} isLast={index === items.length - 1} />
             ))}
         </div>
     );

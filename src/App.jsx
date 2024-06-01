@@ -45,57 +45,7 @@ function App() {
 
         <Portfolio />
         
-        <div className="filler-text">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-        </div>
-        <div className="filler-text">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-        </div>
-        <div className="filler-text">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos officia natus sequi dignissimos ipsum maxime doloribus vitae perspiciatis tempore odit, laborum rem dolorum nesciunt repudiandae. Maxime deserunt nihil molestiae.</p>
-        </div>
+        
         <div id="connect">Connect Section</div>
       </div>
     </>
