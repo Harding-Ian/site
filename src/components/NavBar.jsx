@@ -23,14 +23,45 @@ export const NavBar = () => {
         return () => window.removeEventListener("scroll", onScroll);
     }, [])
 
+    useEffect(() => {
+      const sections = document.querySelectorAll('section');
+      const options = {
+        threshold: 0.3
+      };
+  
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setActiveLink(entry.target.id);
+          }
+        });
+      }, options);
+  
+      sections.forEach(section => {
+        observer.observe(section);
+      });
+  
+      return () => {
+        sections.forEach(section => {
+          observer.unobserve(section);
+        });
+      };
+    }, []);
+
     const onUpdateActiveLink = (value) => {
         setActiveLink(value);
     }
 
     const scrollToConnect = () => {
-      const connectSection = document.getElementById('connect');
+      const connectSection = document.getElementById('connect-section');
       connectSection.scrollIntoView({ behavior: 'smooth' });
-  };
+    };
+
+    // const scrollToProjects = () => {
+    //   const projectSection = document.getElementById('project-section');
+    //   projectSection.scrollIntoView({ behavior: 'smooth' });
+    // }
+  
 
     return (
         <Navbar expand="md" className={scrolled ? "scrolled": ""}>

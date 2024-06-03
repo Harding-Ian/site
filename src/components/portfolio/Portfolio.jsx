@@ -61,7 +61,7 @@ const Single = ({ item, isLast }) => {
     );
 };
 
-const Portfolio = () => {
+const Portfolio = ({ id }) => {
     const ref = useRef();
     const { scrollYProgress } = useScroll({
         target: ref,
@@ -74,7 +74,7 @@ const Portfolio = () => {
     });
 
     return (
-        <div className="portfolio" ref={ref}>
+        <div className="portfolio" ref={ref} id={id}>
             <div className="progress">
                 <h1 className="projects-header">Projects</h1>
                 <motion.div style={{ scaleX }} className="progressBar"></motion.div>

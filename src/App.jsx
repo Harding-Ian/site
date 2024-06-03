@@ -35,10 +35,10 @@ function App() {
         </div>
 
 
-        <Portfolio />
+        <Portfolio id ="projects"/>
         
         
-        <div id="connect">Connect Section</div>
+        <div id="connect-section">Connect Section</div>
       </div>
     </>
   )

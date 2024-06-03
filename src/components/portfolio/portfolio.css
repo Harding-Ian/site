@@ -112,7 +112,7 @@
 }
 
 .text-container h2{
-    font-size: 4vw;
+    font-size: 80px;
 }
 
 .text-container p{
@@ -141,6 +141,7 @@
 
 
 .bubble-button {
+    margin-top: 5%;
     --colour: rgb(247, 213, 64);
     color: var(--colour) !important;
     border: 5px solid var(--colour);
