@@ -1,18 +1,10 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { NavBar } from './components/NavBar';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Parallax from './components/Parallax';
 import Portfolio from './components/portfolio/Portfolio';
-// import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 
 function App() {
-
-  // const fillerText = loremIpsum({
-  //   count: 20, // Number of paragraphs
-  //   format: 'plain', // Plain text format
-  //   units: 'paragraphs'
-  // });
-  
 
   return (
     <>

@@ -10,19 +10,22 @@ const items = [
         id: 1,
         title: "Temporary",
         img: p1,
-        desc: "Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus numquam voluptatibus cumque maxime reiciendis, similique recusandae atque nemo, tempore voluptates dignissimos ipsam pariatur voluptatem. Omnis hic neque eveniet voluptatum et."
+        desc: "Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus numquam voluptatibus cumque maxime reiciendis, similique recusandae atque nemo, tempore voluptates dignissimos ipsam pariatur voluptatem. Omnis hic neque eveniet voluptatum et.",
+        url: "https://www.youtube.com/"
     },
     {
         id: 2,
         title: "Temporary 2",
         img: p2,
-        desc: "Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus numquam voluptatibus cumque maxime reiciendis, similique recusandae atque nemo, tempore voluptates dignissimos ipsam pariatur voluptatem. Omnis hic neque eveniet voluptatum et."
+        desc: "Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus numquam voluptatibus cumque maxime reiciendis, similique recusandae atque nemo, tempore voluptates dignissimos ipsam pariatur voluptatem. Omnis hic neque eveniet voluptatum et.",
+        url: "https://www.youtube.com/"
     },
     {
         id: 3,
         title: "Temporary 3",
         img: p3,
-        desc: "Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus numquam voluptatibus cumque maxime reiciendis, similique recusandae atque nemo, tempore voluptates dignissimos ipsam pariatur voluptatem. Omnis hic neque eveniet voluptatum et."
+        desc: "Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus numquam voluptatibus cumque maxime reiciendis, similique recusandae atque nemo, tempore voluptates dignissimos ipsam pariatur voluptatem. Omnis hic neque eveniet voluptatum et.",
+        url: "https://www.youtube.com/"
     },
 ];
 
@@ -40,14 +43,16 @@ const Single = ({ item, isLast }) => {
         <section>
             <div className="item-container">
                 <div className="item-wrapper">
-                    <div image-container ref={ref}>
+                    <div className= "image-container" ref={ref}>
                         <img src={item.img} alt="" />
                     </div>
                     <motion.div className="text-container" style={{y}}>
                         <h2>{item.title}</h2>
                         <p>{item.desc}</p>
-                        <button>See More</button>
-                        <a href="https://twitter.com/Dave_Conner" class="btn btn-4"><span>Hover</span></a> 
+                        <a className="bubble-button" href={item.url} target="_blank">
+                            See More
+                            <span></span><span></span><span></span><span></span>
+                        </a>
                     </motion.div>
                 </div>
             </div>
@@ -71,7 +76,7 @@ const Portfolio = () => {
     return (
         <div className="portfolio" ref={ref}>
             <div className="progress">
-                <h1>Projects</h1>
+                <h1 className="projects-header">Projects</h1>
                 <motion.div style={{ scaleX }} className="progressBar"></motion.div>
             </div>
             {items.map((item, index) => (
@@ -82,3 +87,92 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+
+// const Portfolio = () => {
+//     const ref1 = useRef();
+//     const ref2 = useRef();
+//     const ref3 = useRef();
+
+//     const { scrollYProgress: scrollYProgress1 } = useScroll({ target: ref1 });
+//     const { scrollYProgress: scrollYProgress2 } = useScroll({ target: ref2 });
+//     const { scrollYProgress: scrollYProgress3 } = useScroll({ target: ref3 });
+
+//     const y1 = useTransform(scrollYProgress1, [0, 1], [-100, 100]);
+//     const y2 = useTransform(scrollYProgress2, [0, 1], [-100, 100]);
+//     const y3 = useTransform(scrollYProgress3, [0, 1], [-100, 100]);
+
+//     const scaleX = useSpring(scrollYProgress1, {
+//         stiffness: 100,
+//         damping: 30,
+//     });
+
+//     return (
+//         <div className="portfolio">
+//             <div className="progress">
+//                 <h1 className="projects-header">Projects</h1>
+//                 <motion.div style={{ scaleX }} className="progressBar"></motion.div>
+//             </div>
+
+//             {/* Project 1 */}
+//             <section>
+//                 <div className="item-container">
+//                     <div className="item-wrapper">
+//                         <div className="image-container" ref={ref1}>
+//                             <img src={p1} alt="Temporary" />
+//                         </div>
+//                         <motion.div className="text-container" style={{ y: y1 }}>
+//                             <h2>Temporary</h2>
+//                             <p>Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus numquam voluptatibus cumque maxime reiciendis, similique recusandae atque nemo, tempore voluptates dignissimos ipsam pariatur voluptatem. Omnis hic neque eveniet voluptatum et.</p>
+//                             <a className="bubble-button" href="https://www.youtube.com/" target="_blank">
+//                                 See More
+//                                 <span></span><span></span><span></span><span></span>
+//                             </a>
+//                         </motion.div>
+//                     </div>
+//                 </div>
+//             </section>
+//             <div className="horizontal-line"></div>
+
+//             {/* Second Item */}
+//             <section>
+//                 <div className="item-container">
+//                     <div className="item-wrapper">
+//                         <div className="image-container" ref={ref2}>
+//                             <img src={p2} alt="Temporary 2" />
+//                         </div>
+//                         <motion.div className="text-container" style={{ y: y2 }}>
+//                             <h2>Temporary 2</h2>
+//                             <p>Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus numquam voluptatibus cumque maxime reiciendis, similique recusandae atque nemo, tempore voluptates dignissimos ipsam pariatur voluptatem. Omnis hic neque eveniet voluptatum et.</p>
+//                             <a className="bubble-button" href="https://www.youtube.com/" target="_blank">
+//                                 See More
+//                                 <span></span><span></span><span></span><span></span>
+//                             </a>
+//                         </motion.div>
+//                     </div>
+//                 </div>
+//             </section>
+//             <div className="horizontal-line"></div>
+
+//             {/* Third Item */}
+//             <section>
+//                 <div className="item-container">
+//                     <div className="item-wrapper">
+//                         <div className="image-container" ref={ref3}>
+//                             <img src={p3} alt="Temporary 3" />
+//                         </div>
+//                         <motion.div className="text-container" style={{ y: y3 }}>
+//                             <h2>Temporary 3</h2>
+//                             <p>Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus numquam voluptatibus cumque maxime reiciendis, similique recusandae atque nemo, tempore voluptates dignissimos ipsam pariatur voluptatem. Omnis hic neque eveniet voluptatum et.</p>
+//                             <a className="bubble-button" href="https://www.youtube.com/" target="_blank">
+//                                 See More
+//                                 <span></span><span></span><span></span><span></span>
+//                             </a>
+//                         </motion.div>
+//                     </div>
+//                 </div>
+//             </section>
+//         </div>
+//     );
+// };
+
+// export default Portfolio;

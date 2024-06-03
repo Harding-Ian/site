@@ -1,7 +1,12 @@
+*{
+    box-sizing: border-box;
+    
+}
+
 
 .portfolio{
    position: relative;
-   background-color: 041C2C; 
+   background-color: #041C2C; 
    display: flex;
    align-items: center;
    flex-direction: column;
@@ -15,21 +20,26 @@
     color: rgb(255, 230, 2);
     font-size: 30px;
     width: 100%;
-    height: auto;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    padding-top: 85px;
+    padding-top: 75px;
     background-color: #041C2C;
     z-index: 100;
 }
 
 
 .progressBar{
+    margin-top: 5px;
     height: 10px;
     width: 98%;
     background-color: white;
     z-index: 50;
     align-self: center;
+}
+
+.projects-header{
+    font-size: 82px;
 }
 
 .item-container{
@@ -51,17 +61,48 @@
 }
 
 .image-container{
-    height: 50%;
     flex: 1;
-
+    overflow: hidden;
+    position: relative;
+    border: 5px solid;
+    border-image: linear-gradient(to right, #071522, #040d16) 1;
 }
 
-.item-container img{
-    height: 40vh;
+.image-container::after{
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    top: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3));
+    left: -75%;
+    z-index: 10;
+    transform: skew(22deg);
+}
+
+.image-container:hover::after{
+    animation: shine 1.2s;
+}
+
+@keyframes shine{
+    0%{
+        left: -75%;
+    }
+    100%{
+        left: 175%;
+    }
+}
+
+.image-container img{
     transition: 0.5s;
+    height: 100%;
+    width: 100%;
 }
 
-
+.image-container:hover img{
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
 
 
 .text-container{
@@ -79,18 +120,82 @@
     font-size: 20px;
 }
 
-.text-container button{
-    background-color: rgb(197, 177, 0);
-    border: none;
-    border-radius: 10px;
-    margin-top: 5%;
-}
 
 .horizontal-line{
-    width: 100%;
+    width: 85vw;
     height: 4px;
     border: 0 none;
     margin-left: auto;
     margin-right: auto;
     background-color: rgb(175, 175, 175);
+}
+
+/* .horizontal-line{
+    width: 80%;
+    height: 4px;
+    border: 0 none;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(175, 175, 175);
+} */
+
+
+.bubble-button {
+    --colour: rgb(247, 213, 64);
+    color: var(--colour) !important;
+    border: 5px solid var(--colour);
+    font-size: 1.3em;
+    border: 4px solid var(--colour);
+    width: 220px;
+    height: 60px;
+    font-family: 'Centra', sans-serif;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bubble-button span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--colour);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+.bubble-button:hover {
+    color: #071522 !important;
+    cursor: pointer;
+    background-color: var(--colour);
+    transition: color 0.5s, background-color 0s 0.5s;
+}
+
+
+.bubble-button:hover span {
+    transform: translateY(0) scale(2);
+}
+
+.bubble-button span:nth-child(1) {
+    --n: 1;
+}
+
+.bubble-button span:nth-child(2) {
+    --n: 2;
+}
+
+.bubble-button span:nth-child(3) {
+    --n: 3;
+}
+
+.bubble-button span:nth-child(4) {
+    --n: 4;
 }
