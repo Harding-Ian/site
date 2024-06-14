@@ -78,7 +78,7 @@ export const NavBar = () => {
               </Nav>
               <span className="navbar-text">
                 <div className="social-icons">
-                    <a id='github-logo' href="#"><img src ={githubLogo} alt="github"/></a>
+                    <a id='github-logo' href="https://github.com/Harding-Ian" target="_blank"><img src ={githubLogo} alt="github"/></a>
                     {/* <a href="#"><img src ={linekdInLogo} alt="linkedIn"/></a> */}
                 </div>
                 <button className="contact" onClick={() => scrollToConnect()}><span>Let’s Connect</span></button>

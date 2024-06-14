@@ -77,7 +77,7 @@ const Portfolio = ({ id }) => {
         <div className="portfolio" ref={ref} id={id}>
             <div className="progress">
                 <h1 className="projects-header">Projects</h1>
-                <motion.div style={{ scaleX }} className="progressBar"></motion.div>
+                <motion.div style={{ scaleX }} className="progress-bar"></motion.div>
             </div>
             {items.map((item, index) => (
                 <Single item={item} key={item.id} isLast={index === items.length - 1} />
@@ -110,7 +110,7 @@ export default Portfolio;
 //         <div className="portfolio">
 //             <div className="progress">
 //                 <h1 className="projects-header">Projects</h1>
-//                 <motion.div style={{ scaleX }} className="progressBar"></motion.div>
+//                 <motion.div style={{ scaleX }} className="progress-bar"></motion.div>
 //             </div>
 
 //             {/* Project 1 */}
